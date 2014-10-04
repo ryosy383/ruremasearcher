@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'thor'
+
+module RuremaSearcher
+  class CLI < Thor
+    class_option :help, type: :boolean, aliases: '-h', desc: 'help message.'
+    class_option :version, type: :boolean, desc: 'version'
+    default_task :search
+
+    desc 'search', 'Search in http://rurema.clear-code.com/'
+    def search(words)
+      exit(true)
+    rescue => e
+      warn(e.message)
+      exit(false)
+    end
+
+    desc 'version', 'version'
+    def version
+      p RuremaSearcher::VERSION
+    end
+  end
+end
+
+RuremaSearcher::CLI.start(ARGV)
