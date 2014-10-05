@@ -1,6 +1,7 @@
 # Ruremasearcher
+[![Gem Version](https://badge.fury.io/rb/ruremasearcher.svg)](http://badge.fury.io/rb/ruremasearcher) ![build](https://travis-ci.org/ryosy383/ruremasearcher.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/ryosy383/ruremasearcher/badge.png)](https://coveralls.io/r/ryosy383/ruremasearcher)
 
-CUI上で「るりまサーチ」（http://docs.ruby-lang.org/ja/search/）ができるGemです。
+CUI上で「るりまサーチ」（ http://docs.ruby-lang.org/ja/search/ ） ができるGemです。
 
 ## Installation
 
@@ -19,6 +20,7 @@ Or install it yourself as:
 ## Usage
 
 $ ruremasercher serch 検索したい文字列（複数の場合はクォーテーションで囲ってください）
+最大5件まで検索結果が表示されます。
 
 ```
 $ ruremasearcher search succ
