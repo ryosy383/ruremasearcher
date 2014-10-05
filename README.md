@@ -1,4 +1,4 @@
-# Ruremasearcher
+# RuremaSearcher
 ![Gem Version](https://badge.fury.io/rb/ruremasearcher.svg) ![build](https://travis-ci.org/ryosy383/ruremasearcher.svg?branch=master) 
 [![Coverage Status](https://img.shields.io/coveralls/ryosy383/ruremasearcher.svg)](https://coveralls.io/r/ryosy383/ruremasearcher?branch=master) 
   
