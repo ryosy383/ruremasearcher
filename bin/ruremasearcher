@@ -2,6 +2,7 @@
 
 require '../lib/AutoRedirector'
 require '../lib/ruremasearcher'
+require '../lib/HtmlParser'
 require 'thor'
 
 module RuremaSearcher
@@ -17,9 +18,20 @@ module RuremaSearcher
       ar = AutoRedirector.new(agent)
       ar.get(url)
       search_result = ar.search(words)
-      # ---- DEBUG ----
-      p search_result.body.toutf8
-      #----------------
+
+      hp = HtmlParser.new(search_result.body.toutf8)
+      hp.parse
+      top5 = hp.titles.size - 1 >= 5 ? 5 : hp.titles.size - 1
+      (top5).times do |i|
+        out = <<-EOS
+---検索結果：#{ i+1 }件目------------------------------
+タイトル： #{hp.titles[i].text.strip if hp.titles[i]}
+分類：#{hp.metadata[i].text.strip if hp.metadata[i]}
+要約：#{hp.summaries[i].text.strip if hp.summaries[i]}
+説明：#{hp.descriptions[i].text.strip if hp.descriptions[i]}
+EOS
+        print out
+      end
       exit(true)
     rescue => e
       warn(e.message)
