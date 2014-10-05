@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "coveralls"
 
-  s.add_runtime_dependency "mechanize", "~> 2.7.0"
+  spec.add_runtime_dependency "mechanize", "~> 2.7.0"
 end
