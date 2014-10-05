@@ -1,5 +1,6 @@
-require 'ruremasearcher'
-require 'spec_helper'
+require '../../lib/AutoRedirectorruremasearcher'
+require '../../lib/HtmlParser'
+require '../'
 
 describe Ruremasearcher do
   it 'should have a version number' do
