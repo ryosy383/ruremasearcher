@@ -1,5 +1,5 @@
 # Ruremasearcher
-![Gem Version](https://badge.fury.io/rb/ruremasearcher.svg)](http://badge.fury.io/rb/ruremasearcher) ![build](https://travis-ci.org/ryosy383/ruremasearcher.svg?branch=master)
+![Gem Version](https://badge.fury.io/rb/ruremasearcher.svg) ![build](https://travis-ci.org/ryosy383/ruremasearcher.svg?branch=master)
 
 CUI上で「るりまサーチ」（ http://docs.ruby-lang.org/ja/search/ ） ができるGemです。
 
