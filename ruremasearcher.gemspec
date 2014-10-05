@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mosso.ryosy383@gmail.com"]
   spec.summary       = %q{Search for in the Rurima-Search the method of Ruby.}
   spec.description   = %q{Search in http://rurema.clear-code.com/}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ryosy383/ruremasearcher"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
