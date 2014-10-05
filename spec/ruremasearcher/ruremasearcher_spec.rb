@@ -7,7 +7,7 @@ require 'spec_helper'
 
 describe Ruremasearcher do
   it 'should have a version number' do
-    expect(Ruremasearcher::VERSION).to eq('0.0.4')
+    expect(Ruremasearcher::VERSION).to eq('0.0.5')
   end
 end
 
