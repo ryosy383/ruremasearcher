@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Ruremasearcher::VERSION
   spec.authors       = ["ryosy383"]
   spec.email         = ["mosso.ryosy383@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Search for in the Rurima-Search the method of Ruby.}
+  spec.description   = %q{Search in http://rurema.clear-code.com/}
   spec.homepage      = ""
   spec.license       = "MIT"
 
