@@ -6,7 +6,7 @@ require 'html_parser'
 
 describe Ruremasearcher do
   it 'should have a version number' do
-    expect(Ruremasearcher::VERSION).to eq('0.0.6')
+    expect(Ruremasearcher::VERSION).to eq('0.0.7')
   end
 end
 
@@ -125,7 +125,7 @@ EOS
     expect(hp.titles[0]).to eq("String#split(sep = $;, limit = 0) -> [String] | [[String]]")
     expect(hp.metadata[0]).to eq('インスタンスメソッド')
     expect(hp.summaries[0]).to eq("第 1 引数 sep で指定されたセパレータによって文字列を limit 個まで分割し、結果を文字列の配列で返します。")
-    expect(hp.descriptions[0]).to eq("...p \"   a \t  b   c\".split(/ +/) # => [\"\", \"a\", \"b\", \"c\"]    p \"   a \t  b   c\".split(nil)   # => [\"a\", \"b\", \"c\"]    p \"   a \t  b   c\".split(' ')   # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    p \"   a \t  b   c\".split        # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    #...")
+    expect(hp.descriptions[0]).to eq("...p \"   a \t  b   c\".split(/ +/) # => [\"\", \"a\", \"b\", \"c\"]    p \"   a \t  b   c\".split(nil)   # => [\"a\", \"b\", \"c\"]    p \"   a \t  b   c\".split(' ')   # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    p \"   a \t  b   c\".split        # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    #...                          ...p '1-10,20'.split(/([-,])/)   # => [\"1\", \"-\", \"10\", \",\", \"20\"]    # 正規表現が空文字列にマッチする場合は 1 文字に分割    p 'hi there'.split(/ */).join(':')  # => \"h:i:t:h:e:r:e\"    # 文字列全体を 1 文字ずつに分割する例    p 'hi there'.split(//).join(':'...                          ...'.split(//).join(':')       # => \"文:字:列\"    # limit == 0 だと制限なく分割、配列末尾の空文字列は取り除かれる    p \"a,b,c,,,\".split(/,/, 0)   # => [\"a\", \"b\", \"c\"]    # limit 省略時は 0 と同じ (最もよく使われるパターン)    p \"a,b,c,,,\".split(/,/)...                          ...p \"a,b,c,,,\".split(/,/, 0)   # => [\"a\", \"b\", \"c\"]    # limit 省略時は 0 と同じ (最もよく使われるパターン)    p \"a,b,c,,,\".split(/,/)      # => [\"a\", \"b\", \"c\"]    # 正の limit 使用例    p \"a,b,c,d,e\".split(/,/, 1)  # => [\"a,b,c,d,e\"]    p \"a,b,c,d,e\".split(/,/, 2)  # =...")
 
   end
 end

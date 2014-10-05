@@ -13,7 +13,7 @@ class HtmlParser
     @titles = @doc.css('dt > h3')
     @metadata =  @doc.css('ul.entry-metadata > li.entry-type > span')
     @summaries = @doc.css('div.entry-summary > p')
-    @descriptions = @doc.css('div.entry-document > div.entry-snippets > div.snippet')
+    @descriptions = @doc.css('div.entry-document')
     clean_string
   end
 
