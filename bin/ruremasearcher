@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
+# coding: utf-8
 
-require '../lib/AutoRedirector'
-require '../lib/ruremasearcher'
-require '../lib/HtmlParser'
+require 'auto_redirector'
+require 'html_parser'
 require 'thor'
 
 module RuremaSearcher
