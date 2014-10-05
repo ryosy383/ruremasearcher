@@ -8,6 +8,4 @@ gem 'thor', '~> 0.19.1'
 gem 'rubocop', '~> 0.26.1'
 gem 'nokogiri'
 gem 'mechanize', '~> 2.7.3'
-group :test do
-  gem 'coveralls', :require => false
-end
+gem 'coveralls', :require => false
