@@ -19,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-$ ruremasercher serch 検索したい文字列（複数の場合はクォーテーションで囲ってください）
+$ ruremasercher serch 検索したい文字列（複数の場合はクォーテーションで囲ってください）  
 最大5件まで検索結果が表示されます。
 
 ```
