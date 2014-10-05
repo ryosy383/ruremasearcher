@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require '../lib/AutoRedirector'
+require '../lib/ruremasearcher'
 require 'thor'
 
 module RuremaSearcher
@@ -10,6 +12,14 @@ module RuremaSearcher
 
     desc 'search', 'Search in http://rurema.clear-code.com/'
     def search(words)
+      agent = 'Linux Firefox'
+      url = 'http://rurema.clear-code.com/'
+      ar = AutoRedirector.new(agent)
+      ar.get(url)
+      search_result = ar.search(words)
+      # ---- DEBUG ----
+      p search_result.body.toutf8
+      #----------------
       exit(true)
     rescue => e
       warn(e.message)
