@@ -19,7 +19,8 @@ Or install it yourself as:
 
 ## Usage
 
-$ ruremasercher search <検索したい文字列>   (検索文字列が複数の場合はクォーテーションで囲ってください）  
+$ ruremasercher search <検索したい文字列>  
+(検索文字列が複数の場合はクォーテーションで囲ってください）  
 最大5件まで検索結果が表示されます。  
 例:  
 $ ruremasercher search 'each with'
