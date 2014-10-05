@@ -26,43 +26,38 @@ $ ruremasercher search <検索したい文字列>
 $ ruremasercher search 'each with'
 
 ```
-$ ruremasearcher search succ
+$ ruremasearcher search "each with"
 ---検索結果：1件目------------------------------
-タイトル： IPAddr#succ -> IPAddr
-        
-        (18107)
+タイトル： Matrix#each(which = :all) -> Enumerator
 分類：インスタンスメソッド
-要約：次の IPAddr オブジェクトを返します。
-説明：...次の IPAddr オブジェクトを返します。  ipaddr = IPAddr.new('192.168.1.1')  p ipaddr.succ.to_s #=> "192.168.1.2"...
+要約：行列の各要素を引数としてブロックを呼び出します。
+説明：...Enumerator を返します。  Matrix[ [1,2], [3,4] ].each { |e| puts e }  # => prints the numbers 1 to 4  Matrix[ [1,2], [3,4] ].each(:strict_lower).to_a # => [3]@param which どの要素に対してブロックを呼び出すのかを Symbol で指定します@see Matrix#each_with_index...
 ---検索結果：2件目------------------------------
-タイトル： Time#succ -> Time
-        
-        (18107)
+タイトル： Matrix#each(which = :all) {|e| ... } -> self
 分類：インスタンスメソッド
-要約：self に 1 秒足した Time オブジェクトを生成して返します。
-説明：...成して返します。このメソッドは obsolete です。 self + 1 を代わりに使用してください。  t = Time.now  p t  p t.succ  # => Sun Jul 18 01:41:22 JST 2004       Sun Jul 18 01:41:23 JST 2004...
+要約：行列の各要素を引数としてブロックを呼び出します。
+説明：...Enumerator を返します。  Matrix[ [1,2], [3,4] ].each { |e| puts e }  # => prints the numbers 1 to 4  Matrix[ [1,2], [3,4] ].each(:strict_lower).to_a # => [3]@param which どの要素に対してブロックを呼び出すのかを Symbol で指定します@see Matrix#each_with_index...
 ---検索結果：3件目------------------------------
-タイトル： Fixnum#succ -> Fixnum | Bignum
-        
-        (18101)
+タイトル： REXML::Element#each_element_with_attribute(key, value = nil, max = 0, name = nil) {|element| ... } -> ()
 分類：インスタンスメソッド
-要約：self の次の整数を返します。
-説明：self の次の整数を返します。
+要約：特定の属性を持つすべての子要素を引数としてブロックを呼び出します。
+説明：...t.each_element_with_attribute('id'){|e| p e }  # >> <b id='1'/>  # >> <c id='2'/>  # >> <d id='1'/>  doc.root.each_element_with_attribute('id', '1'){|e| p e }  # >> <b id='1'/>  # >> <d id='1'/>  doc.root.each_element_with_attribute('id', '1', 1){|e| p e }  # >> <b id='1'/>  doc.root.each_e...
 ---検索結果：4件目------------------------------
-タイトル： String#succ -> String
-        
-        (15239)
+タイトル： REXML::Element#each_element_with_text(text = nil, max = 0, name = nil) {|element| ... } -> ()
 分類：インスタンスメソッド
-要約：self の「次の」文字列を返します。
-説明：..."aa".succ        # => "ab"  p "88".succ.succ   # => "90""99" → "100", "AZZ" → "BAA" のような繰り上げも行われます。このとき負符号などは考慮されません。    p "99".succ   # => "100"    p "ZZ".succ   # => "AAA"    p "a9".succ   # => "b0"    p "-9".succ   #...
+要約：テキストを子ノードとして持つすべての子要素を引数としてブロックを呼び出します。
+説明：...lement_with_attribute('id', '1', 0, 'd'){|e| p e }  # >> <d id='1'/>...
 ---検索結果：5件目------------------------------
-タイトル： Prime::EratosthenesGenerator#succ -> Integer
-        
-        (15113)
+タイトル： Matrix#each_with_index(which = :all) -> Enumerator
 分類：インスタンスメソッド
-要約：次の(疑似)素数を返します。なお、この実装においては疑似素数は真に素数です。
-説明：...文字になり、残りは保存されます。    p "1.9.9".succ # => # "2.0.0"逆に self がアルファベットや数字をまったく含まない場合は、単純に文字コードを 1 増やします。    p ".".succ     # => "/"さらに、self が空文字列の場合は "" を...
+要約：行列の各要素をその位置とともに引数としてブロックを呼び出します。
+説明：...a>'  doc.root.each_element_with_text {|e|p e}  # >> <b> ... </>  # >> <c> ... </>  # >> <d> ... </>  doc.root.each_element_with_text('b'){|e|p e}  # >> <b> ... </>  # >> <c> ... </>  doc.root.each_element_with_text('b', 1){|e|p e}  # >> <b> ... </>  doc.root.each_element_with_text(nil, 0,...
+
 ```
+## Release Notes
+
+v0.0.4 出力形式の変更をしました。  
+v0.0.1 初回リリース 
 
 ## Contributing
 
