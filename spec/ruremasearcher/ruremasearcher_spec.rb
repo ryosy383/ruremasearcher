@@ -7,7 +7,7 @@ require 'spec_helper'
 
 describe Ruremasearcher do
   it 'should have a version number' do
-    expect(Ruremasearcher::VERSION).to eq('0.0.3')
+    expect(Ruremasearcher::VERSION).to eq('0.0.4')
   end
 end
 
@@ -123,10 +123,10 @@ describe HtmlParser do
 EOS
     hp = HtmlParser.new(html)
     hp.parse
-    expect(hp.titles[0].text.strip).to eq("String#split(sep = $;, limit = 0) -> [String] | [[String]]\n        \n        (18222)")
-    expect(hp.metadata[0].text.strip).to eq('インスタンスメソッド')
-    expect(hp.summaries[0].text.strip).to eq("第 1 引数 sep で指定されたセパレータによって文字列を limit 個まで分割し、\n結果を文字列の配列で返します。")
-    expect(hp.descriptions[0].text.strip).to eq("...p \"   a \t  b \n  c\".split(/ +/) # => [\"\", \"a\", \"b\", \"c\"]    p \"   a \t  b \n  c\".split(nil)   # => [\"a\", \"b\", \"c\"]    p \"   a \t  b \n  c\".split(' ')   # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    p \"   a \t  b \n  c\".split        # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    #...")
+    expect(hp.titles[0]).to eq("String#split(sep = $;, limit = 0) -> [String] | [[String]]")
+    expect(hp.metadata[0]).to eq('インスタンスメソッド')
+    expect(hp.summaries[0]).to eq("第 1 引数 sep で指定されたセパレータによって文字列を limit 個まで分割し、結果を文字列の配列で返します。")
+    expect(hp.descriptions[0]).to eq("...p \"   a \t  b   c\".split(/ +/) # => [\"\", \"a\", \"b\", \"c\"]    p \"   a \t  b   c\".split(nil)   # => [\"a\", \"b\", \"c\"]    p \"   a \t  b   c\".split(' ')   # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    p \"   a \t  b   c\".split        # => [\"a\", \"b\", \"c\"]   # split(nil) と同じ    #...")
 
   end
 end

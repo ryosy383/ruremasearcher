@@ -25,10 +25,10 @@ module RuremaSearcher
       (top5).times do |i|
         out = <<-EOS
 ---検索結果：#{ i+1 }件目------------------------------
-タイトル： #{hp.titles[i].text.strip if hp.titles[i]}
-分類：#{hp.metadata[i].text.strip if hp.metadata[i]}
-要約：#{hp.summaries[i].text.strip if hp.summaries[i]}
-説明：#{hp.descriptions[i].text.strip if hp.descriptions[i]}
+タイトル： #{hp.titles[i] if hp.titles[i]}
+分類：#{hp.metadata[i] if hp.metadata[i]}
+要約：#{hp.summaries[i] if hp.summaries[i]}
+説明：#{hp.descriptions[i] if hp.descriptions[i]}
 EOS
         print out
       end

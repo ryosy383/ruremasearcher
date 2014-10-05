@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruremasearcher (0.0.1)
+    ruremasearcher (0.0.4)
 
 GEM
   remote: https://rubygems.org/
