@@ -56,7 +56,8 @@ $ ruremasearcher search "each with"
 
 ```
 ## Release Notes
-
+  
+v0.0.6 Gemに依存関係を加えました。
 v0.0.5 出力形式の変更をしました。  
 v0.0.1 初回リリース 
 
