@@ -56,7 +56,7 @@ $ ruremasearcher search "each with"
 ```
 ## Release Notes
 
-v0.0.4 出力形式の変更をしました。  
+v0.0.5 出力形式の変更をしました。  
 v0.0.1 初回リリース 
 
 ## Contributing
