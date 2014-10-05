@@ -1,9 +1,8 @@
 # coding: utf-8
-
+require 'spec_helper'
 require 'ruremasearcher/version'
 require 'auto_redirector'
 require 'html_parser'
-require 'spec_helper'
 
 describe Ruremasearcher do
   it 'should have a version number' do
