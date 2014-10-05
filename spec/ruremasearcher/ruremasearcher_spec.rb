@@ -6,7 +6,7 @@ require 'html_parser'
 
 describe Ruremasearcher do
   it 'should have a version number' do
-    expect(Ruremasearcher::VERSION).to eq('0.0.5')
+    expect(Ruremasearcher::VERSION).to eq('0.0.6')
   end
 end
 
