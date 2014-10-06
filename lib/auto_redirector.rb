@@ -6,7 +6,7 @@ class AutoRedirector
   attr_accessor :agent
 
   def initialize(agent)
-    self.set_agent(agent)
+    set_agent(agent)
   end
 
   def set_agent(agent)

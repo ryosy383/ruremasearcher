@@ -17,7 +17,9 @@ class HtmlParser
     clean_string
   end
 
+
   private
+
   def clean_string
     @titles = @titles.map do |e|
       custum_strip(e).gsub(/\(\d+\)\Z/, '').strip
