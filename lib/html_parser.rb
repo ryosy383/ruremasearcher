@@ -32,6 +32,7 @@ class HtmlParser
       custum_strip(e)
     end
   end
+
   def custum_strip(e)
     e.text.gsub(/\n/, '').strip
   end
