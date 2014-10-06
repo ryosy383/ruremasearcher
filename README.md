@@ -1,7 +1,8 @@
 # RuremaSearcher
 ![Gem Version](https://badge.fury.io/rb/ruremasearcher.svg) ![build](https://travis-ci.org/ryosy383/ruremasearcher.svg?branch=master) 
 [![Coverage Status](https://img.shields.io/coveralls/ryosy383/ruremasearcher.svg)](https://coveralls.io/r/ryosy383/ruremasearcher?branch=master) 
-  
+[![Code Climate](https://codeclimate.com/github/ryosy383/ruremasearcher/badges/gpa.svg)](https://codeclimate.com/github/ryosy383/ruremasearcher)  
+
 CUIコマンドライン上で「るりまサーチ」（ http://docs.ruby-lang.org/ja/search/ ） で検索を行うことができるGemです。
 
 ## Installation
