@@ -20,17 +20,20 @@ class HtmlParser
   private
   def clean_string
     @titles = @titles.map do |e|
-      e.text.gsub(/\n/, '').strip.gsub(/\(\d+\)\Z/, '').strip
+      custum_strip(e).gsub(/\(\d+\)\Z/, '').strip
     end
     @metadata = @metadata.map do |e|
-      e.text.gsub(/\n/, '').strip
+      custum_strip(e)
     end
     @summaries = @summaries.map do |e|
-      e.text.gsub(/\n/, '').strip
+      custum_strip(e)
     end
     @descriptions = @descriptions.map do |e|
-      e.text.gsub(/\n/, '').strip
+      custum_strip(e)
     end
+  end
+  def custum_strip(e)
+    e.text.gsub(/\n/, '').strip
   end
 
 end
