@@ -5,6 +5,8 @@
 
 CUIコマンドライン上で「るりまサーチ」（ http://docs.ruby-lang.org/ja/search/ ） で検索を行うことができるGemです。
 
+![anime](https://github.com/ryosy383/ruremasearcher/blob/master/anime.gif)
+
 ## Installation
 
 Add this line to your application's Gemfile:
